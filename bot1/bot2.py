@@ -33,7 +33,7 @@ tg_channel_url_AUTexam = "https://t.me/+8MTwQ16Xx5FmNWJk"
 # tg_channel_id_natural = -1002419752883
 # tg_channel_id_social = -1002462494621
 bot_name = "Freshman Tricks Bot"
-pricing = 750
+pricing = 1000
 
 channels = {
     # "class a": {"link": "https://t.me/+Qbqk4EH8QVk3OWNk", "id": -1002419752883},
@@ -284,24 +284,24 @@ def class_call_back(call: CallbackQuery):
     if call.data == "_class_a":
         con.stream = "Both Natural & Social"
         con.selected_class = "Freshman class for 2018"
-        required_payment = 750
+        required_payment = 1000
         grade_text = "Freshman(2018)"
-        con.amount_to_pay = 750  # Set the default price
+        con.amount_to_pay = 1000  # Set the default price
 
     elif call.data == "_class_b":
         con.stream = "Natural"
         con.selected_class = "Class B"
-        required_payment = 750
+        required_payment = 1000
         grade_text = "Class B"
     elif call.data == "_class_c":
         con.stream = "Social"
         con.selected_class = "Class C"
-        required_payment = 750
+        required_payment = 1000
         grade_text = "Class C"
     elif call.data == "_class_d":
         con.stream = "Both"
         con.selected_class = "Class D"
-        required_payment = 750
+        required_payment = 1000
         grade_text = "Class D"
     elif call.data == "_aut_exam":
         con.stream = "UAT Exam"

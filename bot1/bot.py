@@ -32,7 +32,7 @@ tg_channel_url_social = "https://t.me/+N34eJQgVf4NmMWI0"
 tg_channel_id_natural = -1002777415741
 tg_channel_id_social = -1003090788132
 bot_name = "Remedial Tricks Bot"
-pricing = 750
+pricing = 1000
 contact_us_msg = rm_contact_us
 
 
@@ -262,7 +262,7 @@ def program_call_back(call: CallbackQuery):
         <b>Confirm Your Registration</b>
         -----------------------------------
         Name: {tg_user.first_name}
-        Grade: Remedial(2017)
+        Grade: Remedial(2018)
         Stream: {con.stream}
         Required Payment: {pricing} ETB
         """
@@ -287,7 +287,7 @@ def stream_call_back(call: CallbackQuery):
     #     <b>Confirm Your Registration</b>
     #     -----------------------------------
     #     Name: {tg_user.first_name}
-    #     Grade: Remedial(2017)
+    #     Grade: Remedial(2018)
     #     Stream: {con.stream}
     #     Required Payment: {pricing} ETB
     # """
@@ -297,11 +297,11 @@ def stream_call_back(call: CallbackQuery):
             call.message.chat.id,
             "Which program are you in?",
             reply_markup=get_inline_keyboard(
-                _natural_revision="2017 Remedial Natural revision"
+                _natural_revision="2018 Remedial Natural revision"
             )
             # .add(
             #     InlineKeyboardButton(
-            #         "2017 Remedial Social revision", callback_data="_social_revision"
+            #         "2018 Remedial Social revision", callback_data="_social_revision"
             #     )
             # )
             .add(
@@ -314,11 +314,11 @@ def stream_call_back(call: CallbackQuery):
             call.message.chat.id,
             "Which program are you in?",
             reply_markup=get_inline_keyboard(
-                _social_revision="2017 Remedial Social revision"
+                _social_revision="2018 Remedial Social revision"
             )
             # .add(
             #     InlineKeyboardButton(
-            #         "2017 Remedial Social revision", callback_data="_social_revision"
+            #         "2018 Remedial Social revision", callback_data="_social_revision"
             #     )
             # )
             .add(
